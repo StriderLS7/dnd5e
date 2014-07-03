@@ -1,0 +1,42 @@
+.gradient {
+    background: linear-gradient(10deg, #A73335, white);
+    height:5px;
+    margin:7px 0px;
+}
+.name {
+    font-size:225%;
+    font-family:Georgia, serif;
+    font-variant:small-caps;
+    font-weight:bold;
+}
+.description {
+    font-style:italic;
+}
+.bold {
+    font-weight:bold;
+}
+table {
+    width:100%;
+    border:0px;
+    border-collapse:collapse;
+}
+th, td {
+    width:50px;
+    text-align:center;
+}
+.actions {
+    font-size:175%;
+    font-variant:small-caps;
+    margin:17px 0px 0px 0px;
+}
+.hr {
+    background: black;
+    height:2px;
+}
+.attack {
+    margin:5px 0px;
+}
+.attackname {
+    font-weight:bold;
+    font-style:italic;
+}

@@ -1,0 +1,18 @@
+[{"name": "Ankheg",
+  "type": "Large Beast",
+  "ac": 15,
+  "hp": "39 (6d10 + 6)",
+  "speed": "30 ft., burrow 20 ft.",
+  "senses": "darkvision 60 ft., tremorsense 30 ft.",
+  "stats": {"str": 15, "dex": 11, "con": 13, "int": 1, "wis": 13, "cha":6},
+  "alignment": "Unaligned",
+  "languages": "",
+  "traits": [
+   {"name": "Soft Underbelly", "desc": "While the ankheg is prone, it takes a –3 penalty to AC."},
+   {"name": "Tunneler", "desc": "When the ankheg burrows, it leaves behind a 5‐foot-diameter tunnel."}
+  ],
+  "actions": [
+    {"name": "Melee Attack-Bite", "desc": "+4 to hit (reach 5 ft.; one creature). Hit: 9 (2d6 + 2) piercing damage and 3 (1d6) acid damage, and a Medium or smaller target is grappled and is restrained while grappled. While it has a creature grappled, the ankheg can bite only that creature. Whenever the ankheg takes damage, it releases the grapple."},
+    {"name": "Acid Spray (Recharge 6)", "desc":"If it has no creature grappled, the ankheg can breathe acid in a 30-­‐foot line. Each creature in the line must make a DC 9 Dexterity saving throw. Failed Save: 10 (3d6) acid damage. Successful Save: Half damage."}  ],
+  "encounter_building": {"level": 4, "xp": 190}
+ }]

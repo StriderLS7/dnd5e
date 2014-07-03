@@ -1,0 +1,13 @@
+{
+  "name": "dnd5e",
+  "version": "1.0.0",
+  "description": "Collection of web tools for DND 5E",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Lucas Schroeder",
+  "dependencies": {
+    "express": "^4.4.5"
+  }
+}
