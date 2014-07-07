@@ -19,7 +19,7 @@ var monsterSchema = new Schema({
         cha: String
     },
     alignment: String,
-    languages: [String],
+    languages: String,
     traits: [{
         name: String,
         desc: String
