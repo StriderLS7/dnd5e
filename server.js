@@ -5,7 +5,8 @@ var mongoose    = require('mongoose');
 var Monster     = require('./app/models/monster');
 
 
-mongoose.connect('mongodb://localhost/dnd5e');
+//mongoose.connect('mongodb://localhost/dnd5e');
+mongoose.connect('mongodb://admin:yfEI1HqrMsDw@dnd5e-striderls7.rhcloud.com/dnd5e');
 
 var server = express();
 server.use(express.static(__dirname + '/public'));
