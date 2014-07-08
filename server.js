@@ -16,7 +16,7 @@ if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
         process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
         process.env.OPENSHIFT_APP_NAME;
 }
-
+mongoose.connect(connection_string);
 
 var server = express();
 server.use(express.static(__dirname + '/public'));
