@@ -5,8 +5,18 @@ var mongoose    = require('mongoose');
 var Monster     = require('./app/models/monster');
 
 
-//mongoose.connect('mongodb://localhost/dnd5e');
-mongoose.connect('mongodb://admin:yfEI1HqrMsDw@dnd5e-striderls7.rhcloud.com/dnd5e');
+//mongoose.connect('mongodb://admin:yfEI1HqrMsDw@localhost/dnd5e');
+//mongoose.connect('mongodb://admin:yfEI1HqrMsDw@dnd5e-striderls7.rhcloud.com/dnd5e');
+var connection_string = '127.0.0.1:27017/dnd5e';
+// if OPENSHIFT env variables are present, use the available connection info:
+if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
+    connection_string = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+        process.env.OPENSHIFT_APP_NAME;
+}
+
 
 var server = express();
 server.use(express.static(__dirname + '/public'));
