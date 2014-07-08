@@ -1,3 +1,8 @@
+.monster {
+    border:1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
 .gradient {
     background: linear-gradient(10deg, #A73335, white);
     height:5px;

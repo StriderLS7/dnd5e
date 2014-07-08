@@ -1,0 +1,22 @@
+{
+  "name": "dnd5e",
+  "version": "0.0.0",
+  "homepage": "https://github.com/StriderLS7/dnd5e",
+  "authors": [
+    "Lucas Schroeder <striderls7@hotmail.com>"
+  ],
+  "description": "DND5e Web Toolkit",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "None",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

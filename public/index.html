@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="DND5ETools">
     <head>
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
+        <script src="scripts/libs/ui-bootstrap-tpls-0.11.0.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link href="CSS/statblock.css" rel="stylesheet" />
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
-        <script type="text/javascript" src="scripts\app.js"></script>
+        <link href="CSS/main.css" rel="stylesheet" />
     </head>
 
     <body ng-controller="MainController as mainCtrl">
-        <h1> DND5E Tools </h1>
-        <form>
-            <button ng-click="mainCtrl.showDiv('monsters')">Show Monsters</button>
-        </form>
-        <div ng-repeat="monster in bestiary" ng-include="'templates/monster.html'">
+        <div class="header">
+            <img src="images\dnd5e_logo.png" class="pull-left">
+            <span class="mainTitle">Toolbox</span>
         </div>
+        <!--<form>-->
+            <!--<button ng-click="mainCtrl.showDiv('monsters')">Show Monsters</button>-->
+        <!--</form>-->
+        <tabset>
+            <tab heading="Bestiary">
+                <div class="header"></div>
+                <div ng-include="'templates/bestiary.html'"></div>
+            </tab>
+            <tab heading="Spellbook">
+                <div>Coming Soon...</div>
+            </tab>
+            <tab heading="Equipment">
+                <div>Coming Soon...</div>
+            </tab>
+        </tabset>
+        <!--<div ng-repeat="monster in bestiary" ng-include="'templates/monster.html'">-->
+        <!--</div>-->
     </body>
 
 </html>
