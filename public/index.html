@@ -28,6 +28,9 @@
             <tab heading="Equipment">
                 <div>Coming Soon...</div>
             </tab>
+            <tab ng-repeat="tab in tabs" heading="{{tab.title}}">
+                {{tab.content}}
+            </tab>
         </tabset>
         <!--<div ng-repeat="monster in bestiary" ng-include="'templates/monster.html'">-->
         <!--</div>-->

@@ -34,13 +34,7 @@ app.use(function(req, res, next) {
 
 //Load my other routes
 require('./app/routes/bestiaryRoutes')(app);
-
-for (var o in app._router.stack)
-{
-    console.log(app._router.stack[o]);
-}
-
-//console.log(app);
+require('./app/routes/spellRoutes')(app);
 
 app.use(function(err,req,res,next)
 {
