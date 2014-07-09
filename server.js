@@ -21,7 +21,7 @@ mongoose.connect(connection_string);
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 
 var router = express.Router();
 

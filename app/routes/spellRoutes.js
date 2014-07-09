@@ -11,6 +11,28 @@ module.exports = function(app){
 
     var Spell     = require('../models/spell');
 
+    // create a spellbook (accessed at POST /spellbook)
+    app.post('/spellbook', function(req, res) {
+
+        var spells = [];
+        var msg = [];
+        for (var s in req.body)
+        {
+            var spell = new Spell();
+            for (var key in req.body[s]) {
+                spell[key] = req.body[key];
+            }
+            spell.save(function(err) {
+                if (err)
+                    msg.push(err)
+                else
+                    msg.push("Spell created - " + spell.name);
+            });
+        }
+        // save the spell and check for errors
+        res.json({ message: msg });
+    });
+
     // create a spell (accessed at POST /spellbook/spell)
     app.post('/spellbook/spell', function(req, res) {
 

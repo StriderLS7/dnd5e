@@ -5,7 +5,7 @@
 
     $scope.tempTabs = [];
 
-    $http.get('http://localhost:8080/bestiary/monster').success(function(data){
+    $http.get('/bestiary/monster').success(function(data){
       $scope.bestiary = data;
     });
   });
