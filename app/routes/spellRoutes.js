@@ -20,7 +20,7 @@ module.exports = function(app){
         {
             var spell = new Spell();
             for (var key in req.body[s]) {
-                spell[key] = req.body[key];
+                spell[key] = req.body[s][key];
             }
             spell.save(function(err) {
                 if (err)

@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var spellSchema = new Schema({
     name: String,
-    level: Number,
+    level: String,
     school: [String],
     ritual: Boolean,
     castingTime: String,
