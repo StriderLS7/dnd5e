@@ -1,4 +1,4 @@
-<accordion>
+<accordion ng-class="spellbook">
     <accordion-group heading="{{lvl}} Level" ng-repeat="lvl in ['Cantrip', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th']">
         <accordion>
             <accordion-group heading="{{spell.name | titleCase}}" ng-repeat="spell in spellbook | filter: {'level': lvl}">

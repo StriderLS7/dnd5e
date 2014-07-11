@@ -1,3 +1,23 @@
+.tab-content{
+    background-image: url('../images/Dragon-red-background-backgrounds-for-powerpoint-templates.jpg');
+    background-attachment: fixed;
+    background-color: #060606;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.spellbook{
+    width: 40%;
+}
+
+#img.source-image {
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .header {
     background-color: black;
     width: 100%;
